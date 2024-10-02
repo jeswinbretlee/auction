@@ -1,0 +1,85 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+.cache/
+
+# Environment variables
+.env
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# IDE specific
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build files
+dist/
+build/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Ignore package-lock.json or yarn.lock if you want to force installation of the latest dependencies
+# Comment out if you want to track those
+# package-lock.json
+# yarn.lock
+
+# MongoDB related files (if applicable)
+*.lock
+
+# Static and compiled files (optional)
+client/build/
+client/dist/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Next.js build outputs (if applicable)
+.next/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Linux-generated files
+*.out
+*.log
+*.pid
+*.seed
+
+# Windows-specific files
+*.stackdump
