@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Authentication</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <title>Auction System - Login</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external stylesheet -->
 </head>
 <body>
-    <header>
-        <h1>User Registration and Login</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Register</h2>
-            <input type="text" id="registerUsername" placeholder="Username" required>
-            <input type="password" id="registerPassword" placeholder="Password" required>
-            <button onclick="register()">Register</button>
-        </section>
+    <div class="main">
+        <h1>Auction System</h1>
+        <hr>
 
-        <section>
-            <h2>Login</h2>
-            <input type="text" id="loginUsername" placeholder="Username" required>
-            <input type="password" id="loginPassword" placeholder="Password" required>
-            <button onclick="login()">Login</button>
-        </section>
+        <form id="loginForm"> <!-- Added ID for JavaScript access -->
+            <table>
+                <tr>
+                    <td><h4>Select Role</h4></td>
+                    <td>
+                        <select id="role" required>
+                            <option value="admin">Admin</option>
+                            <option value="seller">Seller</option>
+                            <option value="buyer">Buyer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>Username</h4></td>
+                    <td><input type="text" id="loginUsername" placeholder="Enter your username" required></td>
+                </tr>
+                <tr>
+                    <td><h4>Password</h4></td>
+                    <td><input type="password" id="loginPassword" placeholder="Enter your password" required></td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
 
-        <p id="message"></p>
-    </main>
-    <footer>
-        <p>&copy; 2024 User Authentication System</p>
-    </footer>
+        <p>
+            <a href="registration.html">Register</a>
+        </p>
+        <div id="message" style="text-align: center; color: red;"></div> <!-- Message display area -->
+    </div>
+    <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
